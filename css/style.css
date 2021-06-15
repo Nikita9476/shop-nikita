@@ -1,0 +1,316 @@
+body {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* header ------------------------------------*/
+nav {
+	background-color: rgb(255, 207, 0);
+}
+
+nav ul a {
+	color: black;
+}
+
+.brand-logo {
+	margin-top: 5px;
+}
+
+
+/* title ------------------------------------*/
+.title {
+	color: rgb(255, 255, 255);
+    background: rgb(0, 109, 183);
+    padding: 20px;
+}
+
+.title h1 {
+	font-size: 25px;
+	margin: 0;
+	text-align: center;
+}
+
+
+/* footer ---------------------------------*/
+.page-footer {
+	color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+/*----------------------------------------*/
+/*--------------Page Catalog*-------------*/
+/*----------------------------------------*/
+.cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0;
+}
+
+.card-wrap {
+	max-width: 250px;
+	border: 1px solid #eaeaea;
+	padding: 12px;
+}
+
+.card-wrap img {
+	display: block;
+	width: 100%;
+	transition: all 1s ease-out;
+}
+
+.card-wrap img:hover {
+	transition: all 1s ease-out;
+	transform: scale(1.1);
+}
+
+.card-wrap h2 {
+	font-size: 24px;
+}
+
+.card-wrap h2:hover {
+	color: rgb(0, 109, 183);
+}
+
+.button-buy {
+	border: 1px solid rgb(253, 128, 36);
+	background-color: rgb(253, 128, 36);
+    padding: 0.9375rem;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.button-buy:hover {
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.card-wrap span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*----------------------------------------*/
+/*----------------Page Item*--------------*/
+/*----------------------------------------*/
+.item-content{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px 0;
+	text-align: center;
+}
+.item-slider-container{
+	width: 35%;
+	padding: 30px;
+}
+.item-description{
+	width: 30%;
+	padding: 30px;
+	background: rgb(238, 238, 238);
+}
+
+/*------Slider Page Item--------*/
+.item-slider-container .slick-prev:before, .item-slider-container .slick-next:before{
+	color: red;
+	font-size: 36px;
+}
+.item-slider-container .slick-prev {
+    left: -65px;
+}
+.item-slider-container .slick-next {
+    right: -50px;
+}
+
+/*------Short Description Page Item--------*/
+
+.item-description span {
+	font-size: 24px;
+    font-weight: bold;
+}
+
+.item-description .button-buy {
+	max-width: 200px;
+	margin: 30px auto;
+}
+.item-new {
+    color: rgb(0, 0, 0);
+    width: 50px;
+    font-size: 20px;
+    padding: 5px;
+    background: rgb(255, 207, 0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.collapsible-header{
+	font-size: 18px;
+	line-height: 2rem;
+}
+.collapsible li .material-icons{
+	line-height: 2rem;
+}
+.collapsible li:nth-child(1) .material-icons{
+	color: #26a69a;
+}
+.collapsible li:nth-child(2) .material-icons{
+	color: red
+}
+.collapsible li:nth-child(3) .material-icons{
+	color: rgb(255, 40, 0)
+}
+
+/* Сторінка контактів */
+	.contacts-row{
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+		/* border: 2px solid grey; */
+	}
+
+	.contacts-img{
+		width: 20%;
+		display: flex;
+		align-items: center;
+		margin: 20px;
+		/* border: 2px solid grey; */
+	}
+
+	.contacts-img img{
+		display: block;
+		width: 100%;
+		min-width: 180px;
+	}	
+
+	.contacts-info{
+		width: 30%;
+		margin: 20px;
+		padding: 25px;
+		/* border: 2px solid grey; */
+	}
+	
+	.contacts-map{
+		width: 50%;
+		margin: 20px;
+		/* border: 2px solid grey; */
+	}
+
+	.contacts-info{
+		border-radius: 5%;
+		background-color: beige;
+		color: black;
+		background: rgb(0, 109, 183);
+		/* box-shadow: 0px 0px 34px -5px rgba(0, 26, 255, 1) */
+	}
+	.contacts-info h5{
+		color: white;
+	}
+	
+	.contacts-title{
+		text-align: center;
+		margin: 0 0 25px 0;
+		color: white;
+	}
+	.contacts-phone{
+		display: flex;
+		margin-bottom: 20px;
+	}
+	.contacts-phone i, .contacts-phone span, .contacts-phone a{
+		margin-right: 10px;
+		font-size: 20px;
+		line-height: 20px;
+		color: rgb(255, 207, 0);
+	}
+	.contacts-phone a{
+		color: white;
+	}
+	/* сторінка компанії */
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 4px;
+	  }
+	  
+	  /* Create four equal columns that sits next to each other */
+	  .column {
+		flex: 25%;
+		max-width: 25%;
+		padding: 0 4px;
+	  }
+	  
+	  .column img {
+		margin-top: 8px;
+		vertical-align: middle;
+		width: 100%;
+	  }
+
+	  @media screen and (max-width: 800px){
+		  .column{
+			  flex: 50%;
+			  max-width: 50%;
+		  }
+	  }
+		  
+	  
+	  	/* сторінка компанії */
+		  #cart-close{
+			  position: absolute;
+			  top: 10px;
+			  right: 10px;
+		  }
+
+		
+		@media screen and (max-width: 799px){
+			iframe{
+				max-width: 1024px;
+				width: 100%;
+				height: auto;
+				min-height: 400px;
+			}
+		}
+
+
+		#cart{
+			padding: 0 15px;
+		}
+		#cart li{
+			position: relative;
+			display: flex;
+			align-items: center;
+		}
+		#cart li img{
+			margin-right: 20px;
+			max-width: 200px;
+		}
+
+
+		.delete-items{
+			margin-left: 10px;
+			padding: 4px;
+			background-color: red;
+			color: white;
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			border-radius: 50%;
+		}
+
+
+		.cart-btn{
+			position: absolute;
+			top: 5px;
+			right: 78px;
+			background: black;
+		}
+		.cart-btn:hover{background: rgba(255, 0, 0, 1);}
+
+		#ajax-contact-form{
+			max-width: 250px;
+			margin: 0 auto;
+			padding-bottom: 20px;
+		}
